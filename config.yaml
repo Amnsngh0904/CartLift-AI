@@ -1,0 +1,294 @@
+# =============================================================================
+# Context-Aware Sequential Add-On Recommendation System - Configuration
+# =============================================================================
+
+project:
+  name: "addon-recommendation"
+  version: "0.1.0"
+  seed: 42
+  debug: false
+
+# -----------------------------------------------------------------------------
+# Data Settings
+# -----------------------------------------------------------------------------
+data:
+  raw_path: "data/raw"
+  processed_path: "data/processed"
+  cache_path: "data/cache"
+  
+  # Data generation parameters
+  generation:
+    num_users: 10000
+    num_items: 5000
+    num_addons: 1000
+    num_sessions: 100000
+    sequence_length:
+      min: 3
+      max: 15
+    
+  # Train/val/test split
+  split:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+    
+  # Data loading
+  loader:
+    batch_size: 256
+    num_workers: 4
+    pin_memory: true
+    prefetch_factor: 2
+
+# -----------------------------------------------------------------------------
+# Feature Engineering
+# -----------------------------------------------------------------------------
+features:
+  # Item features
+  item:
+    embedding_dim: 128
+    categorical_features:
+      - category
+      - subcategory
+      - brand
+    numerical_features:
+      - price
+      - rating
+      - popularity
+    
+  # User features
+  user:
+    embedding_dim: 64
+    categorical_features:
+      - segment
+      - region
+    numerical_features:
+      - tenure
+      - avg_order_value
+      
+  # Context features
+  context:
+    embedding_dim: 32
+    features:
+      - time_of_day
+      - day_of_week
+      - device_type
+      - session_duration
+
+  # Sequence features
+  sequence:
+    max_length: 50
+    padding: "right"
+    truncation: "left"
+
+# -----------------------------------------------------------------------------
+# Graph Configuration
+# -----------------------------------------------------------------------------
+graph:
+  # Graph construction
+  construction:
+    item_item:
+      enabled: true
+      edge_type: "co_purchase"
+      min_support: 3
+    user_item:
+      enabled: true
+      edge_type: "interaction"
+    addon_item:
+      enabled: true
+      edge_type: "addon_of"
+      
+  # Graph neural network settings
+  gnn:
+    type: "GAT"  # GAT, GCN, GraphSAGE
+    num_layers: 3
+    hidden_dim: 256
+    heads: 4
+    dropout: 0.2
+    residual: true
+    
+  # Sampling for mini-batch training
+  sampling:
+    strategy: "neighbor"
+    num_neighbors: [15, 10, 5]
+    fanout: [25, 15]
+
+# -----------------------------------------------------------------------------
+# Model Architecture
+# -----------------------------------------------------------------------------
+model:
+  name: "ContextAwareSeqModel"
+  
+  # Sequence encoder
+  sequence_encoder:
+    type: "transformer"  # transformer, lstm, gru
+    num_layers: 4
+    hidden_dim: 256
+    num_heads: 8
+    dropout: 0.1
+    layer_norm: true
+    
+  # Attention mechanism
+  attention:
+    type: "multi_head"
+    num_heads: 8
+    attention_dropout: 0.1
+    
+  # Context fusion
+  context_fusion:
+    method: "gated"  # gated, concat, add
+    hidden_dim: 128
+    
+  # Output layer
+  output:
+    hidden_dims: [256, 128]
+    dropout: 0.2
+    activation: "relu"
+
+# -----------------------------------------------------------------------------
+# Training Configuration
+# -----------------------------------------------------------------------------
+training:
+  # Optimization
+  optimizer:
+    name: "adamw"
+    lr: 0.001
+    weight_decay: 0.01
+    betas: [0.9, 0.999]
+    eps: 1.0e-8
+    
+  # Learning rate scheduler
+  scheduler:
+    name: "cosine_annealing_warmup"
+    warmup_epochs: 5
+    min_lr: 1.0e-6
+    
+  # Training loop
+  epochs: 100
+  early_stopping:
+    patience: 10
+    min_delta: 0.001
+    monitor: "val_ndcg@10"
+    mode: "max"
+    
+  # Gradient settings
+  gradient:
+    clip_norm: 1.0
+    accumulation_steps: 1
+    
+  # Mixed precision
+  mixed_precision:
+    enabled: true
+    dtype: "float16"
+    
+  # Checkpointing
+  checkpoint:
+    save_dir: "checkpoints"
+    save_top_k: 3
+    save_last: true
+    
+  # Loss function
+  loss:
+    name: "bpr"  # bpr, bce, sampled_softmax
+    num_negatives: 10
+    temperature: 0.1
+
+# -----------------------------------------------------------------------------
+# Evaluation Metrics
+# -----------------------------------------------------------------------------
+evaluation:
+  metrics:
+    - name: "ndcg"
+      k: [5, 10, 20]
+    - name: "hit_rate"
+      k: [5, 10, 20]
+    - name: "mrr"
+      k: [10]
+    - name: "precision"
+      k: [5, 10]
+    - name: "recall"
+      k: [10, 20]
+    - name: "coverage"
+      k: [10]
+    - name: "diversity"
+      k: [10]
+      
+  # Evaluation settings
+  eval_batch_size: 512
+  num_candidates: 100
+  
+  # A/B test metrics
+  ab_test:
+    enabled: false
+    significance_level: 0.05
+
+# -----------------------------------------------------------------------------
+# Inference Configuration
+# -----------------------------------------------------------------------------
+inference:
+  # Model serving
+  serving:
+    host: "0.0.0.0"
+    port: 8000
+    workers: 4
+    timeout: 30
+    
+  # Recommendation settings
+  recommendation:
+    num_recommendations: 10
+    diversity_weight: 0.2
+    freshness_weight: 0.1
+    
+  # Caching
+  cache:
+    enabled: true
+    backend: "redis"
+    ttl: 3600
+    max_size: 10000
+    
+  # Batch inference
+  batch:
+    enabled: true
+    size: 1000
+    output_path: "outputs/predictions"
+
+# -----------------------------------------------------------------------------
+# Logging & Monitoring
+# -----------------------------------------------------------------------------
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file:
+    enabled: true
+    path: "logs"
+    rotation: "10 MB"
+    retention: "30 days"
+    
+  # Experiment tracking
+  wandb:
+    enabled: true
+    project: "addon-recommendation"
+    entity: null
+    tags: []
+    
+  tensorboard:
+    enabled: true
+    log_dir: "runs"
+
+# -----------------------------------------------------------------------------
+# Infrastructure
+# -----------------------------------------------------------------------------
+infrastructure:
+  # GPU settings
+  device: "cuda"
+  gpu_ids: [0]
+  
+  # Distributed training
+  distributed:
+    enabled: false
+    backend: "nccl"
+    world_size: 1
+    
+  # Resource limits
+  resources:
+    max_memory_gb: 32
+    num_threads: 8
