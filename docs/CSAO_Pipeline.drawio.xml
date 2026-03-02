@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15" version="29.6.0">
+  <diagram name="CSAO End-to-End Pipeline" id="oUlNEiZWdhT0R8rfpkb4">
+    <mxGraphModel dx="3443" dy="1685" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="light-dark(#FFFFFF,#FFFFFF)" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontColor=#1a1a2e;" value="&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 0));&quot;&gt;&lt;b&gt;CARTLIFT AI&lt;/b&gt;&lt;br&gt;End-to-End Machine Learning Pipeline&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="800" x="1483" y="257" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-2" parent="1" style="text;html=1;strokeColor=none;fillColor=#dbeafe;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#1e40af;fontStyle=1;" value="PHASE 1: DATA SOURCES &amp; RAW DATA" vertex="1">
+          <mxGeometry height="30" width="380" x="323" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-3" parent="1" style="text;html=1;strokeColor=none;fillColor=#dcfce7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#166534;fontStyle=1;" value="PHASE 2: DATA CLEANING &amp; ENRICHMENT" vertex="1">
+          <mxGeometry height="30" width="380" x="763" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-4" parent="1" style="text;html=1;strokeColor=none;fillColor=#fef3c7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#92400e;fontStyle=1;" value="PHASE 3: SESSION SIMULATION" vertex="1">
+          <mxGeometry height="30" width="380" x="1203" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-5" parent="1" style="text;html=1;strokeColor=none;fillColor=#fce7f3;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#be185d;fontStyle=1;" value="PHASE 4: GRAPH &amp; EMBEDDINGS" vertex="1">
+          <mxGeometry height="30" width="380" x="1643" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-6" parent="1" style="text;html=1;strokeColor=none;fillColor=#e0e7ff;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#3730a3;fontStyle=1;" value="PHASE 5: FEATURE ENGINEERING" vertex="1">
+          <mxGeometry height="30" width="380" x="2083" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-7" parent="1" style="text;html=1;strokeColor=none;fillColor=#fed7aa;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#c2410c;fontStyle=1;" value="PHASE 6: MODEL TRAINING" vertex="1">
+          <mxGeometry height="30" width="380" x="2523" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-8" parent="1" style="text;html=1;strokeColor=none;fillColor=#d1fae5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#047857;fontStyle=1;" value="PHASE 7: INFERENCE &amp; SERVING" vertex="1">
+          <mxGeometry height="30" width="380" x="2963" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-9" parent="1" style="text;html=1;strokeColor=none;fillColor=#ddd6fe;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=14;fontColor=#6d28d9;fontStyle=1;" value="PHASE 8: FRONTEND &amp; USER INTERACTION" vertex="1">
+          <mxGeometry height="30" width="380" x="3403" y="337" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-10" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#2196F3;strokeColor=#1565C0;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=15;" value="&lt;b&gt;Zomato Dataset&lt;/b&gt;&lt;br&gt;(Kaggle)&lt;hr&gt;zomato_dataset.csv&lt;br&gt;&lt;br&gt;• Restaurant Names&lt;br&gt;• Dining/Delivery Ratings&lt;br&gt;• Cuisines&lt;br&gt;• Menu Items&lt;br&gt;• Prices&lt;br&gt;• Votes&lt;br&gt;• Best Seller Flags" vertex="1">
+          <mxGeometry height="235" width="155" x="508" y="369" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64B5F6;strokeColor=#1976D2;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Sample Data&lt;br&gt;Generator&lt;/b&gt;&lt;hr&gt;generate_sample_data.py&lt;br&gt;&lt;br&gt;Creates synthetic&lt;br&gt;Zomato-like data&lt;br&gt;for development" vertex="1">
+          <mxGeometry height="162" width="141" x="323" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-12" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#1976D2;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Data Cleaning&lt;/b&gt;&lt;hr&gt;clean_dataset.py&lt;br&gt;&lt;br&gt;• Column standardization&lt;br&gt;• City name normalization&lt;br&gt;• Price extraction&lt;br&gt;• Rating cleaning&lt;br&gt;• Unique ID generation&lt;br&gt;• Missing value handling" vertex="1">
+          <mxGeometry height="180" width="160" x="783" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-14" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#2E7D32;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="646" y="553" />
+              <mxPoint x="646" y="531" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-15" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#81C784;strokeColor=#43A047;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Cleaned Data&lt;/b&gt;&lt;hr&gt;&lt;br&gt;restaurants_cleaned.csv&lt;br&gt;• 890 restaurants&lt;br&gt;• Unique IDs&lt;br&gt;&lt;br&gt;menu_items_cleaned.csv&lt;br&gt;• 70K items&lt;br&gt;• Normalized prices" vertex="1">
+          <mxGeometry height="226" width="160" x="783" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-16" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#43A047;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#66BB6A;strokeColor=#388E3C;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Item Categorizer&lt;/b&gt;&lt;hr&gt;item_categorizer.py&lt;br&gt;&lt;br&gt;• Rule-based classification&lt;br&gt;• Keyword matching&lt;br&gt;• Categories:&lt;br&gt;  - Main&lt;br&gt;  - Side&lt;br&gt;  - Dessert&lt;br&gt;  - Beverage&lt;br&gt;• Veg/Non-veg detection" vertex="1">
+          <mxGeometry height="200" width="150" x="983" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-18" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#388E3C;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="965" y="740" />
+              <mxPoint x="965" y="497" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-19" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#81C784;strokeColor=#43A047;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Enriched Items&lt;/b&gt;&lt;hr&gt;menu_items_enriched.csv&lt;br&gt;&lt;br&gt;• item_category&lt;br&gt;• is_veg&lt;br&gt;• price_band&lt;br&gt;• cuisine_group" vertex="1">
+          <mxGeometry height="189" width="153" x="983" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-20" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-17" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#43A047;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9800;strokeColor=#F57C00;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Session&lt;br&gt;Preprocessing&lt;/b&gt;&lt;hr&gt;session_preprocessing.py&lt;br&gt;&lt;br&gt;• Filter valid items&lt;br&gt;• Calculate weights&lt;br&gt;• Prepare item pools&lt;br&gt;• Category balancing" vertex="1">
+          <mxGeometry height="160" width="160" x="1203" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-23" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#F57C00;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1171" y="752" />
+              <mxPoint x="1171" y="477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-24" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#FFB74D;strokeColor=#FF9800;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Simulation&lt;br&gt;Menu Items&lt;/b&gt;&lt;hr&gt;menu_items_simulation.csv&lt;br&gt;&lt;br&gt;• Selection weights&lt;br&gt;• Category pools&lt;br&gt;• Price ranges" vertex="1">
+          <mxGeometry height="189" width="160" x="1203" y="597" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-25" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF9800;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF9800;strokeColor=#E65100;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Session Generator&lt;/b&gt;&lt;hr&gt;session_generator.py&lt;br&gt;&lt;br&gt;• 50K-1M orders simulation&lt;br&gt;• Category transitions&lt;br&gt;• Time-of-day context&lt;br&gt;• User type simulation&lt;br&gt;• Price bracket matching&lt;br&gt;• Negative sampling (5x)&lt;br&gt;• Meal type logic" vertex="1">
+          <mxGeometry height="200" width="160" x="1398" y="502" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-27" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E65100;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-28" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFA726;strokeColor=#FB8C00;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=15;" value="&lt;b&gt;Cart Events&lt;/b&gt;&lt;hr&gt;cart_events.csv&lt;br&gt;&lt;br&gt;• 4.6M+ events&lt;br&gt;• session_id&lt;br&gt;• user_id&lt;br&gt;• restaurant_id&lt;br&gt;• cart_items&lt;br&gt;• candidate_item&lt;br&gt;• label (0/1)&lt;br&gt;• hour, meal_type" vertex="1">
+          <mxGeometry height="237" width="160" x="1433" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-29" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FB8C00;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-30" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFB74D;strokeColor=#FF9800;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=15;" value="&lt;b&gt;Users Data&lt;/b&gt;&lt;hr&gt;users.csv&lt;br&gt;&lt;br&gt;• 50K users&lt;br&gt;• user_type&lt;br&gt;• cuisine prefs&lt;br&gt;• spending habits" vertex="1">
+          <mxGeometry height="178" width="140" x="1187" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-31" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FB8C00;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="o1wHRDnvYVHn8sw_L-GI-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EC407A;strokeColor=#D81B60;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Extract&lt;br&gt;Sequences&lt;/b&gt;&lt;hr&gt;extract_sequences.py&lt;br&gt;&lt;br&gt;• Filter positives&lt;br&gt;• Group by session&lt;br&gt;• Order items&lt;br&gt;• Create sequences" vertex="1">
+          <mxGeometry height="160" width="140" x="1643" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-33" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D81B60;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-32">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1618" y="1008" />
+              <mxPoint x="1618" y="477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-34" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#F48FB1;strokeColor=#EC407A;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Cart Sequences&lt;/b&gt;&lt;hr&gt;cart_sequences.csv&lt;br&gt;&lt;br&gt;• Ordered item&lt;br&gt;  sequences&lt;br&gt;• Pipe-separated&lt;br&gt;  item IDs" vertex="1">
+          <mxGeometry height="186" width="140" x="1643" y="597" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-35" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-32" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EC407A;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EC407A;strokeColor=#C2185B;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Build Co-occurrence&lt;br&gt;Graph&lt;/b&gt;&lt;hr&gt;build_cooccurrence.py&lt;br&gt;&lt;br&gt;• P(j|i) computation&lt;br&gt;• Top-K neighbors&lt;br&gt;• Edge weighting&lt;br&gt;• Sequential analysis" vertex="1">
+          <mxGeometry height="160" width="160" x="1823" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-37" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-34" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#C2185B;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-38" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F48FB1;strokeColor=#EC407A;fontColor=#ffffff;align=center;verticalAlign=middle;" value="&lt;b&gt;Co-occurrence&lt;br&gt;Graph&lt;/b&gt;&lt;hr&gt;item_cooccurrence.pkl&lt;br&gt;&lt;br&gt;• Adjacency list&lt;br&gt;• Item counts&lt;br&gt;• Pair counts&lt;br&gt;• Transition probs" vertex="1">
+          <mxGeometry height="130" width="160" x="1823" y="597" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-39" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-36" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#EC407A;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E91E63;strokeColor=#AD1457;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Train Node2Vec&lt;/b&gt;&lt;hr&gt;train_node2vec.py&lt;br&gt;&lt;br&gt;• Random walks&lt;br&gt;• Walk length: 20&lt;br&gt;• Context size: 10&lt;br&gt;• Walks/node: 10&lt;br&gt;• gensim Word2Vec&lt;br&gt;• Embedding dim: 64" vertex="1">
+          <mxGeometry height="180" width="160" x="1823" y="768" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-41" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-38" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#AD1457;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-42" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F48FB1;strokeColor=#E91E63;fontColor=#ffffff;align=center;verticalAlign=middle;size=20;" value="&lt;b&gt;Item Embeddings&lt;/b&gt;&lt;hr&gt;item_embeddings.npy&lt;br&gt;item_id_mapping.pkl&lt;br&gt;&lt;br&gt;• 70K × 64 matrix&lt;br&gt;• L2 normalized&lt;br&gt;• Similar items →&lt;br&gt;  similar vectors" vertex="1">
+          <mxGeometry height="140" width="160" x="1823" y="982" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-43" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-40" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E91E63;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5C6BC0;strokeColor=#3949AB;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Feature Builder&lt;/b&gt;&lt;hr&gt;feature_builder.py&lt;br&gt;&lt;br&gt;• Fix zero embeddings&lt;br&gt;• Category centroid&lt;br&gt;  imputation&lt;br&gt;• User RFM features&lt;br&gt;• Restaurant features&lt;br&gt;• Feature normalization&lt;br&gt;• Scaler fitting" vertex="1">
+          <mxGeometry height="200" width="160" x="2202" y="377" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-45" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3949AB;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-44">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2018" y="1052" />
+              <mxPoint x="2018" y="477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-46" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-28" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3949AB;strokeWidth=2;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1513" y="1153" />
+              <mxPoint x="2043" y="1153" />
+              <mxPoint x="2043" y="447" />
+            </Array>
+            <mxPoint x="2205" y="447" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-47" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3949AB;strokeWidth=2;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1257" y="1171" />
+              <mxPoint x="2063" y="1171" />
+              <mxPoint x="2063" y="518" />
+              <mxPoint x="2202" y="518" />
+            </Array>
+            <mxPoint x="2202" y="518" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-48" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#7986CB;strokeColor=#5C6BC0;fontColor=#ffffff;align=center;verticalAlign=middle;size=20;" value="&lt;b&gt;Fixed Embeddings&lt;/b&gt;&lt;hr&gt;item_embeddings_fixed.npy&lt;br&gt;&lt;br&gt;• Zero imputed&lt;br&gt;• L2 normalized&lt;br&gt;• Category centroids" vertex="1">
+          <mxGeometry height="110" width="198" x="2185" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-49" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-54" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5C6BC0;strokeWidth=2;endArrow=classic;exitX=0.496;exitY=0.821;exitDx=0;exitDy=0;exitPerimeter=0;" target="o1wHRDnvYVHn8sw_L-GI-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-50" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#7986CB;strokeColor=#5C6BC0;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;User Features&lt;/b&gt;&lt;hr&gt;user_features.parquet&lt;br&gt;&lt;br&gt;• recency_days&lt;br&gt;• frequency&lt;br&gt;• monetary_avg&lt;br&gt;• cuisine_entropy&lt;br&gt;• dessert_ratio&lt;br&gt;• beverage_ratio&lt;br&gt;• (all normalized)" vertex="1">
+          <mxGeometry height="252" width="140" x="2079" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-51" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5C6BC0;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-52" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#7986CB;strokeColor=#5C6BC0;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Restaurant Features&lt;/b&gt;&lt;hr&gt;restaurant_features.parquet&lt;br&gt;&lt;br&gt;• smoothed_rating&lt;br&gt;• delivery_votes&lt;br&gt;• avg_item_price&lt;br&gt;• price_band_index&lt;br&gt;• menu_size&lt;br&gt;• (all normalized)" vertex="1">
+          <mxGeometry height="229" width="150" x="2313" y="643" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-53" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5C6BC0;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-56" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7043;strokeColor=#E64A19;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;CartDataset&lt;/b&gt;&lt;br&gt;(PyTorch Dataset)&lt;hr&gt;&lt;br&gt;• Load cart events&lt;br&gt;• Index mapping&lt;br&gt;• Feature lookup&lt;br&gt;• On-the-fly features&lt;br&gt;• Memory efficient" vertex="1">
+          <mxGeometry height="160" width="150" x="2523" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-57" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-48" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E64A19;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2491" y="1187" />
+              <mxPoint x="2491" y="513" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-58" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-50" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E64A19;strokeWidth=2;endArrow=classic;exitX=0.491;exitY=0.885;exitDx=0;exitDy=0;exitPerimeter=0;" target="o1wHRDnvYVHn8sw_L-GI-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2148" y="893" />
+              <mxPoint x="2473" y="893" />
+              <mxPoint x="2473" y="477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-59" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-52" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E64A19;strokeWidth=2;endArrow=classic;exitX=0.519;exitY=0.849;exitDx=0;exitDy=0;exitPerimeter=0;" target="o1wHRDnvYVHn8sw_L-GI-56">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2388" y="837" />
+              <mxPoint x="2388" y="873" />
+              <mxPoint x="2483" y="873" />
+              <mxPoint x="2483" y="438" />
+            </Array>
+            <mxPoint x="2523" y="444" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF5722;strokeColor=#BF360C;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;CartAddToCartModel&lt;/b&gt;&lt;hr&gt;cart_transformer.py&lt;br&gt;&lt;br&gt;&lt;b&gt;Architecture:&lt;/b&gt;&lt;br&gt;• Cart Encoder (2L, 4H)&lt;br&gt;• Positional Encoding&lt;br&gt;• Mean Pooling&lt;br&gt;&lt;br&gt;&lt;b&gt;Features (218d):&lt;/b&gt;&lt;br&gt;• Cart embed (64d)&lt;br&gt;• Candidate embed (64d)&lt;br&gt;• Interaction (65d)&lt;br&gt;• User (7d)&lt;br&gt;• Restaurant (5d)&lt;br&gt;• Cart dynamic (6d)&lt;br&gt;• Context (7d)&lt;br&gt;&lt;br&gt;&lt;b&gt;MLP:&lt;/b&gt;&lt;br&gt;218→256→128→1&lt;br&gt;(Sigmoid)" vertex="1">
+          <mxGeometry height="320" width="170" x="2749" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-61" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-56" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#BF360C;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2727" y="477" />
+              <mxPoint x="2727" y="477" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF7043;strokeColor=#E64A19;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Model Training&lt;/b&gt;&lt;hr&gt;train_model.py&lt;br&gt;&lt;br&gt;• BCEWithLogitsLoss&lt;br&gt;• pos_weight=5.0&lt;br&gt;• AdamW optimizer&lt;br&gt;• CosineAnnealing LR&lt;br&gt;• Time-based split&lt;br&gt;• AUC, PR-AUC metrics&lt;br&gt;• Early stopping&lt;br&gt;• Checkpointing" vertex="1">
+          <mxGeometry height="200" width="150" x="2535" y="613" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-63" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-60" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#E64A19;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2834" y="728" />
+              <mxPoint x="2711" y="728" />
+              <mxPoint x="2711" y="697" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-64" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#FFAB91;strokeColor=#FF7043;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=15;" value="&lt;b&gt;Model Checkpoints&lt;/b&gt;&lt;hr&gt;checkpoints/&lt;br&gt;&lt;br&gt;• best_model_final.pt&lt;br&gt;• checkpoint_epoch_*.pt&lt;br&gt;• final_model.pt&lt;br&gt;&lt;br&gt;Contains:&lt;br&gt;• model_state_dict&lt;br&gt;• optimizer_state&lt;br&gt;• epoch, metrics&lt;br&gt;• config" vertex="1">
+          <mxGeometry height="246" width="142" x="2539" y="876" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-65" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-62" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF7043;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF8A65;strokeColor=#FF5722;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Evaluation&lt;/b&gt;&lt;hr&gt;topk_evaluation.py&lt;br&gt;&lt;br&gt;• Precision@K&lt;br&gt;• Recall@K&lt;br&gt;• NDCG@K&lt;br&gt;• MRR&lt;br&gt;• Hit Rate@K&lt;br&gt;• vs Random baseline" vertex="1">
+          <mxGeometry height="160" width="150" x="2763" y="777" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-67" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-64" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#FF5722;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#26A69A;strokeColor=#00897B;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;InferenceModel&lt;/b&gt;&lt;br&gt;(Wrapper Class)&lt;hr&gt;&lt;br&gt;• Load frozen model&lt;br&gt;• Load embeddings&lt;br&gt;• Feature lookups&lt;br&gt;• Candidate ranking&lt;br&gt;• Top-K selection&lt;br&gt;• Score computation" vertex="1">
+          <mxGeometry height="180" width="160" x="2963" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-69" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-64" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00897B;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" target="o1wHRDnvYVHn8sw_L-GI-68">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2610" y="1148" />
+              <mxPoint x="2934" y="1148" />
+              <mxPoint x="2934" y="487" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00BFA5;strokeColor=#00897B;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;FastAPI Service&lt;/b&gt;&lt;hr&gt;inference_service.py&lt;br&gt;&lt;br&gt;&lt;b&gt;Endpoints:&lt;/b&gt;&lt;br&gt;POST /recommend&lt;br&gt;GET /health&lt;br&gt;GET /restaurants&lt;br&gt;GET /restaurants/{id}/items&lt;br&gt;&lt;br&gt;&lt;b&gt;Features:&lt;/b&gt;&lt;br&gt;• CORS middleware&lt;br&gt;• Latency tracking&lt;br&gt;• Error handling&lt;br&gt;• uvicorn server" vertex="1">
+          <mxGeometry height="240" width="160" x="3163" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-71" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-68" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#00897B;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-72" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#4DB6AC;strokeColor=#26A69A;fontColor=#ffffff;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;size=15;" value="&lt;b&gt;API Request&lt;/b&gt;&lt;hr&gt;&lt;br&gt;{&lt;br&gt;  user_id: string,&lt;br&gt;  restaurant_id: string,&lt;br&gt;  cart_item_ids: [],&lt;br&gt;  hour: int,&lt;br&gt;  meal_type: string&lt;br&gt;}" vertex="1">
+          <mxGeometry height="160" width="160" x="2970" y="594" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-73" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#4DB6AC;strokeColor=#26A69A;fontColor=#ffffff;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;size=15;" value="&lt;b&gt;API Response&lt;/b&gt;&lt;hr&gt;&lt;br&gt;{&lt;br&gt;  recommendations: [{&lt;br&gt;    item_id,&lt;br&gt;    item_name,&lt;br&gt;    price,&lt;br&gt;    category,&lt;br&gt;    score&lt;br&gt;  }],&lt;br&gt;  latency_ms: float&lt;br&gt;}" vertex="1">
+          <mxGeometry height="211" width="159" x="2970" y="771" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-74" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#80CBC4;strokeColor=#4DB6AC;fontColor=#004D40;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;" value="&lt;b&gt;Performance&lt;/b&gt;&lt;hr&gt;&lt;br&gt;• Request parse: 0.1ms&lt;br&gt;• Feature lookup: 2.0ms&lt;br&gt;• Embedding lookup: 0.1ms&lt;br&gt;• Model forward: 0.15ms&lt;br&gt;• Total: ~32ms" vertex="1">
+          <mxGeometry height="140" width="160" x="3163" y="677" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7E57C2;strokeColor=#5E35B1;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;React Frontend&lt;/b&gt;&lt;hr&gt;frontend-react/&lt;br&gt;&lt;br&gt;• TypeScript&lt;br&gt;• Vite build&lt;br&gt;• CartContext&lt;br&gt;• useRecommendations&lt;br&gt;• Component-based&lt;br&gt;• Modern UI" vertex="1">
+          <mxGeometry height="180" width="160" x="3507" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-79" parent="1" style="shape=mxgraph.azure.user;fillColor=#B39DDB;strokeColor=#7E57C2;" value="" vertex="1">
+          <mxGeometry height="80" width="80" x="3547" y="627" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-80" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EDE7F6;strokeColor=#B39DDB;fontColor=#4A148C;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;" value="&lt;b&gt;USER EXPERIENCE&lt;/b&gt;&lt;hr&gt;&lt;br&gt;1. Select restaurant&lt;br&gt;2. Browse menu items&lt;br&gt;3. Add items to cart&lt;br&gt;4. View AI recommendations&lt;br&gt;5. Add suggested items&lt;br&gt;6. Complete order" vertex="1">
+          <mxGeometry height="170" width="180" x="3399" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-82" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-77" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B39DDB;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-83" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-79" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B39DDB;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-84" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D1C4E9;strokeColor=#9575CD;fontColor=#4A148C;align=left;verticalAlign=top;spacingTop=10;spacingLeft=10;" value="&lt;b&gt;BUSINESS IMPACT&lt;/b&gt;&lt;hr&gt;&lt;br&gt;• Attach Rate: 75% → 91%&lt;br&gt;• Revenue/Session: +19.7%&lt;br&gt;• Avg Position: 3.1 → 2.3&lt;br&gt;• Item Discovery: Improved" vertex="1">
+          <mxGeometry height="140" width="170" x="3618" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAFAFA;strokeColor=#E0E0E0;" value="" vertex="1">
+          <mxGeometry height="160" width="600" x="1057" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-86" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#424242;" value="&lt;b&gt;LEGEND&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="80" x="1067" y="1268" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-87" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=5;fillColor=#2196F3;strokeColor=#1565C0;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1077" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-88" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Data Storage" vertex="1">
+          <mxGeometry height="20" width="90" x="1117" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-89" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4CAF50;strokeColor=#2E7D32;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1077" y="1333" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-90" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Processing Step" vertex="1">
+          <mxGeometry height="20" width="90" x="1117" y="1335" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-91" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#81C784;strokeColor=#43A047;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1077" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-92" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Output File" vertex="1">
+          <mxGeometry height="20" width="90" x="1117" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-93" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E91E63;strokeColor=#AD1457;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1237" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-94" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="ML Component" vertex="1">
+          <mxGeometry height="20" width="90" x="1277" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-95" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FF5722;strokeColor=#BF360C;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1237" y="1333" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-96" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Model Training" vertex="1">
+          <mxGeometry height="20" width="90" x="1277" y="1335" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-97" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#00BFA5;strokeColor=#00897B;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1237" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-98" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="API Service" vertex="1">
+          <mxGeometry height="20" width="90" x="1277" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-99" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9575CD;strokeColor=#7E57C2;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1397" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-100" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Frontend" vertex="1">
+          <mxGeometry height="20" width="90" x="1437" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-101" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F48FB1;strokeColor=#E91E63;size=8;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1397" y="1333" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-102" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Embeddings" vertex="1">
+          <mxGeometry height="20" width="90" x="1437" y="1335" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-103" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#F48FB1;strokeColor=#EC407A;size=8;" value="" vertex="1">
+          <mxGeometry height="25" width="30" x="1397" y="1368" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-104" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Graph Structure" vertex="1">
+          <mxGeometry height="20" width="100" x="1437" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-105" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#424242;strokeWidth=2;endArrow=classic;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1557" y="1313" as="sourcePoint" />
+            <mxPoint x="1607" y="1313" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-106" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="Data Flow" vertex="1">
+          <mxGeometry height="20" width="70" x="1557" y="1323" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-107" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#424242;strokeWidth=2;endArrow=classic;dashed=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1557" y="1368" as="sourcePoint" />
+            <mxPoint x="1607" y="1368" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-108" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;" value="API Call" vertex="1">
+          <mxGeometry height="20" width="70" x="1557" y="1378" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-112" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#90CAF9;" value="" vertex="1">
+          <mxGeometry height="160" width="460" x="1699" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-113" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#1565C0;" value="&lt;b&gt;KEY METRICS &amp; DIMENSIONS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="220" x="1709" y="1268" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-114" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;spacing=4;" value="&lt;b&gt;Data Scale:&lt;/b&gt; 70K items, 890 restaurants, 50K users, 4.6M events&lt;br&gt;&lt;b&gt;Embedding:&lt;/b&gt; 70K × 64 dimensions (Node2Vec)&lt;br&gt;&lt;b&gt;Model Input:&lt;/b&gt; 218 features (cart 64d + candidate 64d + interaction 65d + user 7d + restaurant 5d + cart_dyn 6d + context 7d)&lt;br&gt;&lt;b&gt;Model Architecture:&lt;/b&gt; MLP 218 → 256 → 128 → 1 (ReLU, Dropout 0.1, Sigmoid)&lt;br&gt;&lt;b&gt;Training:&lt;/b&gt; BCEWithLogitsLoss, pos_weight=5, AdamW, CosineAnnealing&lt;br&gt;&lt;b&gt;Inference:&lt;/b&gt; ~32ms latency, Top-8 recommendations" vertex="1">
+          <mxGeometry height="110" width="440" x="1709" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-115" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FFCC80;" value="" vertex="1">
+          <mxGeometry height="160" width="340" x="2199" y="1258" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-116" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontColor=#E65100;" value="&lt;b&gt;TECHNOLOGY STACK&lt;/b&gt;" vertex="1">
+          <mxGeometry height="20" width="180" x="2209" y="1268" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-117" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#424242;spacing=4;" value="&lt;b&gt;ML/Data:&lt;/b&gt; PyTorch, NumPy, Pandas, gensim&lt;br&gt;&lt;b&gt;Graph:&lt;/b&gt; Node2Vec, Word2Vec (gensim)&lt;br&gt;&lt;b&gt;API:&lt;/b&gt; FastAPI, Uvicorn, Pydantic&lt;br&gt;&lt;b&gt;Frontend:&lt;/b&gt; Streamlit, React, TypeScript, Vite&lt;br&gt;&lt;b&gt;Storage:&lt;/b&gt; Parquet, NumPy (.npy), Pickle&lt;br&gt;&lt;b&gt;Evaluation:&lt;/b&gt; scikit-learn (AUC, PR-AUC)" vertex="1">
+          <mxGeometry height="110" width="320" x="2209" y="1298" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-119" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-44" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#5C6BC0;strokeWidth=2;endArrow=classic;" target="o1wHRDnvYVHn8sw_L-GI-54" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2282" y="577" as="sourcePoint" />
+            <mxPoint x="2303" y="1343" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-54" parent="1" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#9FA8DA;strokeColor=#7986CB;fontColor=#ffffff;align=center;verticalAlign=top;spacingTop=10;" value="&lt;b&gt;Feature Scalers&lt;/b&gt;&lt;hr&gt;feature_scalers.pkl&lt;br&gt;&lt;br&gt;• StandardScaler&lt;br&gt;• Mean/Std stats" vertex="1">
+          <mxGeometry height="149" width="150" x="2209" y="914" as="geometry" />
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-120" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-79" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#B39DDB;strokeWidth=2;endArrow=classic;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="o1wHRDnvYVHn8sw_L-GI-84">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3587" y="727" />
+              <mxPoint x="3703" y="727" />
+            </Array>
+            <mxPoint x="3597" y="717" as="sourcePoint" />
+            <mxPoint x="3499" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o1wHRDnvYVHn8sw_L-GI-122" edge="1" parent="1" source="o1wHRDnvYVHn8sw_L-GI-70" style="html=1;labelBackgroundColor=#ffffff;startArrow=none;startFill=0;startSize=6;endArrow=classic;endFill=1;endSize=6;jettySize=auto;orthogonalLoop=1;strokeWidth=1;dashed=1;fontSize=14;rounded=0;strokeColor=light-dark(#000000,#942192);exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.009;entryY=0.336;entryDx=0;entryDy=0;entryPerimeter=0;" target="o1wHRDnvYVHn8sw_L-GI-77" value="">
+          <mxGeometry height="60" relative="1" width="60" as="geometry">
+            <Array as="points" />
+            <mxPoint x="3083" y="1177" as="sourcePoint" />
+            <mxPoint x="3143" y="1117" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
