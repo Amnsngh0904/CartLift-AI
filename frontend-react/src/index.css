@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #e23744;
+  --color-primary-hover: #c92c38;
+  --color-primary-light: #fff0f1;
+  --color-surface: #ffffff;
+  --color-background: #f8f8f8;
+  --color-muted: #a0a0a0;
+  --color-text: #1c1c1c;
+  --color-text-secondary: #4a4a4a;
+  --color-border: #e8e8e8;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply antialiased;
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-text);
+  }
+}
