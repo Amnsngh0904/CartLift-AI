@@ -15,7 +15,7 @@
 5. [Project Structure](#5-project-structure)
 6. [Step-by-Step: How to Run](#6-step-by-step-how-to-run)
 7. [Results & Impact](#7-results--impact)
-8. [Frequently Asked Questions](#8-frequently-asked-questions)
+
 
 ---
 
@@ -492,38 +492,6 @@ Open http://localhost:8501 in your browser.
 
 ---
 
-## 8. Frequently Asked Questions
-
-### General Questions
-
-**Q: Why did you use synthetic/simulated data?**
-> Real Zomato order data isn't publicly available. We generated realistic sessions based on the restaurant/item dataset from Kaggle, using behavioral patterns observed in research literature. The model architecture will generalize to real data.
-
-**Q: Can this work for other platforms (Swiggy, UberEats)?**
-> Yes! The approach is platform-agnostic. You need:
-> - Item catalog with names/prices
-> - Order history (what was added together)
-> - User features (optional but helpful)
-
-**Q: How often should the model be retrained?**
-> - Item embeddings: Weekly (when new items > 1000)
-> - Model weights: Daily or when AUC drops > 2%
-> - Feature scalers: Monthly
-
-### Technical Questions
-
-**Q: Why not use a Transformer for the full model?**
-> We tested it. The Transformer (2 layers, 4 heads) achieved 0.7089 AUC vs. our MLP's 0.7129. Cart sizes are small (3-5 items), so the attention mechanism's expressiveness wasn't needed. The MLP is also 8x faster to train.
-
-**Q: How does cold start work for new users?**
-> New users get context-based recommendations. We don't use user embeddings — only behavioral features like dessert_ratio. For new users, we default to median feature values, which degrades gracefully to pure contextual recommendations.
-
-**Q: Why is PR-AUC only 0.39?**
-> PR-AUC (Precision-Recall AUC) is heavily affected by class imbalance. With only 16.7% positive rate, 0.39 is actually strong. Random would be ~0.17.
-
-**Q: Can the model run on mobile?**
-> The model is 19MB and runs on CPU. It could be converted to ONNX/TFLite for edge inference, but the API response time (~32ms) is already acceptable for mobile apps.
-
 ### Running Issues
 
 **Q: "API not connected" error in Streamlit**
@@ -581,12 +549,6 @@ streamlit run frontend/app.py
 
 ---
 
-## Contact & Credits
-
-**Project:** CSAO - Cart Suggested Add-On  
-**Team:** ZOMATHON  
-**Event:** Zomathon 2026 Hackathon  
-**Date:** March 2026
 
 ---
 
