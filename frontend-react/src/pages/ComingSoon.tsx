@@ -7,7 +7,7 @@ export function ComingSoon() {
       <header className="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <Link to="/" className="text-xl font-bold text-[var(--color-primary)]">
-            ZOMATHON
+            CARTLIFT AI
           </Link>
         </div>
       </header>

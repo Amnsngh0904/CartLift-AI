@@ -31,7 +31,7 @@ export function Footer() {
             viewport={{ once: true }}
             className="col-span-2 md:col-span-1"
           >
-            <span className="text-xl font-bold text-[var(--color-primary)]">ZOMATHON</span>
+            <span className="text-xl font-bold text-[var(--color-primary)]">CARTLIFT AI</span>
             <p className="mt-3 text-white/70 text-sm leading-relaxed">
               Context-aware add-on recommendations for food delivery.
             </p>
@@ -86,8 +86,8 @@ export function Footer() {
           </motion.div>
         </div>
         <div className="mt-12 pt-8 border-t border-white/20 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm">© {new Date().getFullYear()} ZOMATHON. All rights reserved.</p>
-          <p className="text-white/50 text-xs">ZOMATHON 2026</p>
+          <p className="text-white/60 text-sm">© {new Date().getFullYear()} CARTLIFT AI. All rights reserved.</p>
+          <p className="text-white/50 text-xs">CARTLIFT AI 2026</p>
         </div>
       </div>
     </footer>

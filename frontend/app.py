@@ -28,7 +28,7 @@ DATA_DIR = Path("data/processed")
 
 # Page config
 st.set_page_config(
-    page_title="CSAO - Cart Add-on Recommendations",
+    page_title="CARTLIFT AI - Cart Add-on Recommendations",
     page_icon="🍕",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -582,7 +582,7 @@ def main():
     st.markdown("---")
     st.markdown("""
     <div style="text-align: center; color: #666; font-size: 0.9em;">
-        <p>Built for <strong>ZOMATHON 2026</strong> | 
+        <p>Built by <strong>CARTLIFT AI</strong> | 
         <a href="docs/FINAL_SUBMISSION.md">Documentation</a> | 
         <a href="docs/ARCHITECTURE.md">Architecture</a></p>
     </div>

@@ -31,7 +31,7 @@ export function Navbar({ onSearch, location = 'Bangalore' }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-18 gap-4">
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <span className="text-xl font-bold text-[var(--color-primary)]">ZOMATHON</span>
+            <span className="text-xl font-bold text-[var(--color-primary)]">CARTLIFT AI</span>
             <span className="hidden sm:inline text-sm text-[var(--color-text-secondary)] font-medium">
             </span>
           </Link>
