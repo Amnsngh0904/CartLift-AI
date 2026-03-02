@@ -262,9 +262,8 @@ inference:
 
 ## Documentation
 
-- [Technical Documentation](docs/TECHNICAL_DOCUMENTATION.txt) - Complete technical reference
+- [Documentation](docs/PROJECT_EXPLAINED.md) - Project Overview
 - [Architecture](docs/ARCHITECTURE.md) - System design
-- [Demo Script](docs/DEMO_SCRIPT.md) - 3-minute demo walkthrough
 
 
 ## License
